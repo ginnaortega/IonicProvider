@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Huecos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Localidad</th>
+      <th>Direccion</th>
+      <th>Tamanio</th>
+      <th>Ranking</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @huecos.each do |hueco| %>
+      <tr>
+        <td><%= hueco.localidad %></td>
+        <td><%= hueco.direccion %></td>
+        <td><%= hueco.tamanio %></td>
+        <td><%= hueco.ranking %></td>
+        <td><%= link_to 'Show', hueco %></td>
+        <td><%= link_to 'Edit', edit_hueco_path(hueco) %></td>
+        <td><%= link_to 'Destroy', hueco, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Hueco', new_hueco_path %>

@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Localidad:</strong>
+  <%= @hueco.localidad %>
+</p>
+
+<p>
+  <strong>Direccion:</strong>
+  <%= @hueco.direccion %>
+</p>
+
+<p>
+  <strong>Tamanio:</strong>
+  <%= @hueco.tamanio %>
+</p>
+
+<p>
+  <strong>Ranking:</strong>
+  <%= @hueco.ranking %>
+</p>
+
+<%= link_to 'Edit', edit_hueco_path(@hueco) %> |
+<%= link_to 'Back', huecos_path %>

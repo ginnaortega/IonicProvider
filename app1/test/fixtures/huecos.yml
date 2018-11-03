@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  localidad: MyString
+  direccion: MyString
+  tamanio: MyString
+  ranking: 1
+
+two:
+  localidad: MyString
+  direccion: MyString
+  tamanio: MyString
+  ranking: 1
